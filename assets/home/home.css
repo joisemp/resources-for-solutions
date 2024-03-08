@@ -20,4 +20,10 @@
   .navbar .nav-item {
     margin: 0;
   }
+}
+
+#carousel .carousel .carousel-item img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=home.css.map */
