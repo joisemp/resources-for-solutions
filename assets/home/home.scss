@@ -1,2 +1,12 @@
 @import '../base';
 
+#carousel{
+    .carousel{
+        .carousel-item{
+            img{
+                height: 600px;
+                object-fit: cover;
+            }
+        }
+    }
+}
