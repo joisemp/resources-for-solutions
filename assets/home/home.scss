@@ -14,15 +14,23 @@
 
 #about{
     padding: 3rem 0;
+    
     .container{
         max-width: 900px;
+        
+        img{
+            object-fit: cover !important;
+        }
+
         .heading{
             margin-bottom: 1rem;
         }
+
         p{
             margin-bottom: 1rem;
             text-align: justify;
         }
+
         .btn{
             margin-bottom: 2rem;
         }
@@ -42,6 +50,9 @@
     .col{
         display: flex;
         justify-content: center;
+        a{
+            text-decoration: none !important;
+        }
 
         .card{
             max-width: 500px;
@@ -74,6 +85,9 @@
 
             &:hover{
                 color: $base-color;
+                h4{
+                    text-decoration: underline;
+                }
             }
         }
     }
