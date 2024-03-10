@@ -57,6 +57,10 @@
 #about .container {
   max-width: 900px;
 }
+#about .container img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
 #about .container .heading {
   margin-bottom: 1rem;
 }
@@ -79,6 +83,9 @@
 #services .col {
   display: flex;
   justify-content: center;
+}
+#services .col a {
+  text-decoration: none !important;
 }
 #services .col .card {
   max-width: 500px;
@@ -109,4 +116,7 @@
 }
 #services .col .card:hover {
   color: #00275a;
+}
+#services .col .card:hover h4 {
+  text-decoration: underline;
 }/*# sourceMappingURL=home.css.map */
