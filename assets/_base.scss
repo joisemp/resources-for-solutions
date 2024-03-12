@@ -18,6 +18,13 @@ $base-hover-color:#0a0a4b;
     color: $base-color;
     font-weight: 600;
     font-size: 42px;
+    @media screen and (min-width: 768px){
+        max-width: fit-content;
+        padding: 0 0 0 1rem;
+        border-radius: 50%;
+        border-left: 1rem solid #11498a7a;
+        border-bottom: 1rem solid #11498a7a;
+    }
 }
 
 .btn{
@@ -41,6 +48,10 @@ $base-hover-color:#0a0a4b;
             font-weight: bold;
             font-size: 22px;
             color: $base-color;
+            transition-property: padding-left;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+
 
             @media screen and (max-width: 500px){
                 font-size: 20px;
@@ -54,7 +65,22 @@ $base-hover-color:#0a0a4b;
             width: 60px;
             margin-top: -5px;
             margin-right: 5px;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
         }
+
+        @media screen and (min-width: 600px){
+            &:hover{
+                img{
+                    transform: rotateY(360deg);
+                }
+                span{
+                    padding-left: 0.3rem;
+                }
+            }
+        }
+
     }
     
     .nav-item{
