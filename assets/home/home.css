@@ -145,9 +145,6 @@ footer h5 {
 #about {
   padding: 3rem 0;
 }
-#about .container {
-  max-width: 900px;
-}
 #about .container img {
   -o-object-fit: cover !important;
      object-fit: cover !important;
