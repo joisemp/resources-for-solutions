@@ -23,12 +23,27 @@
   padding: 0.5rem 1rem;
 }
 .btn:hover {
-  background-color: rgb(10, 10, 75);
+  background-color: #0a0a4b;
   color: white;
 }
 
 .navbar .navbar-toggler {
   border: none;
+}
+.navbar .navbar-brand span {
+  font-weight: bold;
+  color: #00275a;
+  display: inline;
+}
+@media screen and (max-width: 500px) {
+  .navbar .navbar-brand span {
+    display: none;
+  }
+}
+.navbar .navbar-brand img {
+  width: 60px;
+  margin-top: -5px;
+  margin-right: 5px;
 }
 .navbar .nav-item {
   margin: 0 2rem;
