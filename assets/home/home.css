@@ -32,12 +32,17 @@
 }
 .navbar .navbar-brand span {
   font-weight: bold;
+  font-size: 22px;
   color: #00275a;
-  display: inline;
 }
 @media screen and (max-width: 500px) {
   .navbar .navbar-brand span {
-    display: none;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .navbar .navbar-brand span {
+    font-size: 18px;
   }
 }
 .navbar .navbar-brand img {

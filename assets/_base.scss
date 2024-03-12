@@ -39,11 +39,15 @@ $base-hover-color:#0a0a4b;
     .navbar-brand{
         span{
             font-weight: bold;
+            font-size: 22px;
             color: $base-color;
-            display: inline;
 
             @media screen and (max-width: 500px){
-                display:none;
+                font-size: 20px;
+            }
+
+            @media screen and (max-width: 365px){
+                font-size: 18px;
             }
         }
         img{
