@@ -24,7 +24,7 @@
 
 #about{
     padding: 3rem 0;
-    background-color: #e2e2fd;
+    background-color: #e2ebfd;
     
     .container{
         img{
@@ -58,7 +58,7 @@
 
 
 #portfolio{
-    background-color: #e4f1f7;
+    background-color: #f4f9fc;
     padding: 4rem 0;
 
     .heading{
@@ -107,6 +107,29 @@
                 color: $base-color;
                 h4{
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#brands{
+    background-color: #e2ebfd;
+    padding: 4rem 0;
+    .heading{
+        margin-bottom: 1rem;
+    }
+    .carousel{
+        .carousel-item{
+            .col{
+                filter: grayscale(1);
+                display: flex;
+                justify-content: center;
+                img{
+                    object-fit: contain;
+                    height: 200px;
+                    width: 200px !important;
+                    border-radius: 1rem;
                 }
             }
         }
