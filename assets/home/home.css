@@ -203,7 +203,7 @@ footer h5 {
 
 #about {
   padding: 3rem 0;
-  background-color: #e2e2fd;
+  background-color: #e2ebfd;
 }
 #about .container img {
   -o-object-fit: cover !important;
@@ -229,7 +229,7 @@ footer h5 {
 }
 
 #portfolio {
-  background-color: #e4f1f7;
+  background-color: #f4f9fc;
   padding: 4rem 0;
 }
 #portfolio .heading {
@@ -276,4 +276,24 @@ footer h5 {
 }
 #portfolio .col .card:hover h4 {
   text-decoration: underline;
+}
+
+#brands {
+  background-color: #e2ebfd;
+  padding: 4rem 0;
+}
+#brands .heading {
+  margin-bottom: 1rem;
+}
+#brands .carousel .carousel-item .col {
+  filter: grayscale(1);
+  display: flex;
+  justify-content: center;
+}
+#brands .carousel .carousel-item .col img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 200px;
+  width: 200px !important;
+  border-radius: 1rem;
 }/*# sourceMappingURL=home.css.map */
