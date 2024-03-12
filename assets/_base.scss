@@ -18,6 +18,9 @@ $base-hover-color:#0a0a4b;
     color: $base-color;
     font-weight: 600;
     font-size: 42px;
+    @media screen and (max-width: 500px){
+        font-size: 32px;
+    }
     @media screen and (min-width: 768px){
         max-width: fit-content;
         padding: 0 0 0 1rem;
