@@ -148,6 +148,7 @@ footer h5 {
 #about .container img {
   -o-object-fit: cover !important;
      object-fit: cover !important;
+  border-radius: 1rem;
 }
 #about .container .heading {
   margin-bottom: 1rem;
@@ -182,6 +183,7 @@ footer h5 {
 }
 #services .col .card .ratio {
   overflow: hidden;
+  border-radius: 1rem;
 }
 #services .col .card img {
   -o-object-fit: cover;
