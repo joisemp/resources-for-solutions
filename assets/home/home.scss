@@ -18,6 +18,7 @@
     .container{
         img{
             object-fit: cover !important;
+            border-radius: 1rem;
         }
 
         .heading{
@@ -59,6 +60,7 @@
 
             .ratio{
                 overflow: hidden;
+                border-radius: 1rem;
             }
 
             img{
