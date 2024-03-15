@@ -24,7 +24,8 @@
 
 #about{
     padding: 3rem 0;
-    background-color: #e2ebfd;
+    color: #ffffff;
+    background-color: #3a63b1;
     
     .container{
         img{
@@ -39,6 +40,7 @@
         p{
             margin-bottom: 1rem;
             text-align: justify;
+            color: #ececec;
         }
 
         .btn{
@@ -60,10 +62,14 @@
 #portfolio{
     background-color: #f4f9fc;
     padding: 4rem 0;
+    text-align: left;
 
     .heading{
-        text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .row{
+        display: contents !important;
     }
     
     .col{
@@ -72,15 +78,19 @@
         a{
             text-decoration: none !important;
         }
-
         .card{
-            max-width: 500px;
+            max-width: 310px;
             border: none;
             background-color: #ffffff00;
+
+            @media screen and (min-width: 992px){
+                max-width: 270px;
+            }
 
             .ratio{
                 overflow: hidden;
                 border-radius: 1rem;
+                max-width: 100%;
             }
 
             img{
@@ -98,9 +108,12 @@
                 font-weight: 600;
                 font-size: 20px;
             }
-            .card-text{
-                text-align: left;
-                color: #505050;
+            .card-body{
+                padding: 15px 0;
+                .card-text{
+                    text-align: left;
+                    color: #505050;
+                }
             }
 
             &:hover{
@@ -117,21 +130,14 @@
     background-color: #e2ebfd;
     padding: 4rem 0;
     .heading{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
-    .carousel{
-        .carousel-item{
-            .col{
-                filter: grayscale(1);
-                display: flex;
-                justify-content: center;
-                img{
-                    object-fit: contain;
-                    height: 200px;
-                    width: 200px !important;
-                    border-radius: 1rem;
-                }
-            }
+    i{
+        font-size: 60px;
+        padding: 2rem 0;
+
+        @media screen and (max-width:600px) {
+            font-size: 50px;
         }
     }
 }
