@@ -12,24 +12,24 @@
 }
 
 .heading {
-  color: #00275a;
-  font-weight: 600;
-  font-size: 42px;
+  font-size: calc(18px + 1vw);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 10px;
 }
-@media screen and (max-width: 500px) {
-  .heading {
-    font-size: 32px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .heading {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    padding: 0 0 0 1rem;
-    border-radius: 50%;
-    border-left: 1rem solid rgba(17, 73, 138, 0.4784313725);
-    border-bottom: 1rem solid rgba(17, 73, 138, 0.4784313725);
-  }
+.heading::before {
+  background-color: #c50000;
+  content: "";
+  display: block;
+  height: 3px;
+  /* Adjust width as needed for different screen sizes */
+  width: 75px;
+  margin-bottom: 5px;
 }
 
 .btn {
@@ -203,7 +203,8 @@ footer h5 {
 
 #about {
   padding: 3rem 0;
-  background-color: #e2ebfd;
+  color: #ffffff;
+  background-color: #3a63b1;
 }
 #about .container img {
   -o-object-fit: cover !important;
@@ -216,6 +217,7 @@ footer h5 {
 #about .container p {
   margin-bottom: 1rem;
   text-align: justify;
+  color: #ececec;
 }
 #about .container .btn {
   margin-bottom: 2rem;
@@ -231,10 +233,13 @@ footer h5 {
 #portfolio {
   background-color: #f4f9fc;
   padding: 4rem 0;
+  text-align: left;
 }
 #portfolio .heading {
-  text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+#portfolio .row {
+  display: contents !important;
 }
 #portfolio .col {
   display: flex;
@@ -244,13 +249,19 @@ footer h5 {
   text-decoration: none !important;
 }
 #portfolio .col .card {
-  max-width: 500px;
+  max-width: 310px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
+}
+@media screen and (min-width: 992px) {
+  #portfolio .col .card {
+    max-width: 270px;
+  }
 }
 #portfolio .col .card .ratio {
   overflow: hidden;
   border-radius: 1rem;
+  max-width: 100%;
 }
 #portfolio .col .card img {
   -o-object-fit: cover;
@@ -267,7 +278,10 @@ footer h5 {
   font-weight: 600;
   font-size: 20px;
 }
-#portfolio .col .card .card-text {
+#portfolio .col .card .card-body {
+  padding: 15px 0;
+}
+#portfolio .col .card .card-body .card-text {
   text-align: left;
   color: #505050;
 }
@@ -283,17 +297,14 @@ footer h5 {
   padding: 4rem 0;
 }
 #brands .heading {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-#brands .carousel .carousel-item .col {
-  filter: grayscale(1);
-  display: flex;
-  justify-content: center;
+#brands i {
+  font-size: 60px;
+  padding: 2rem 0;
 }
-#brands .carousel .carousel-item .col img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 200px;
-  width: 200px !important;
-  border-radius: 1rem;
+@media screen and (max-width: 600px) {
+  #brands i {
+    font-size: 50px;
+  }
 }/*# sourceMappingURL=home.css.map */
