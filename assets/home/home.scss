@@ -25,12 +25,23 @@
 #about{
     padding: 3rem 0;
     color: #ffffff;
-    background-color: #3a63b1;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #030046 0%, #090979 35%, #00748b 100%);
+    @media screen and (max-width:991px){
+        background: linear-gradient(180deg, #030046 0%, #090979 35%, #00748b 100%);
+    }
     
     .container{
-        img{
-            object-fit: cover !important;
+        .ratio{
+            overflow: hidden;
             border-radius: 1rem;
+            img{
+                object-fit: cover;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
         }
 
         .heading{
@@ -40,11 +51,14 @@
         p{
             margin-bottom: 1rem;
             text-align: justify;
-            color: #ececec;
+            color: #cdcdcd;
         }
 
         .btn{
             margin-bottom: 2rem;
+            background-color: #ffffff;
+            font-weight: 500;
+            color: #000000;
             .icon{
                 padding-left: 0.1rem;
                 transition: all 0.3s ease-in-out;
@@ -60,7 +74,7 @@
 
 
 #portfolio{
-    background-color: #f4f9fc;
+    background-color: #e5f2fa;
     padding: 4rem 0;
     text-align: left;
 
@@ -127,7 +141,7 @@
 }
 
 #brands{
-    background-color: #e2ebfd;
+    background-color: #e1e1ff;
     padding: 4rem 0;
     .heading{
         margin-bottom: 2rem;
