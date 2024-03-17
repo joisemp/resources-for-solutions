@@ -22,14 +22,14 @@
   padding: 0;
   margin-bottom: 10px;
 }
-.heading::before {
+.heading::after {
   background-color: #c50000;
   content: "";
   display: block;
   height: 3px;
   /* Adjust width as needed for different screen sizes */
   width: 75px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .btn {
