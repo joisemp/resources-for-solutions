@@ -1,0 +1,36 @@
+@import '../base';
+
+.top-section{
+    padding-top: 10rem;
+
+    @media screen and (max-width:990px){
+        padding-top: 8rem;
+    }
+}
+
+section{
+    padding: 2rem 0;
+    .container{
+        max-width: 700px;
+        .heading{
+            width: fit-content;
+            margin-bottom: 1rem;
+            font-size: 22px;
+        }
+
+        p{
+            text-align: justify;
+        }
+    }
+    
+    .ratio{
+        max-width: 700px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        border-radius: 1rem;
+
+        img{
+            object-fit: cover;
+        }
+    }
+}
