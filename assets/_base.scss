@@ -30,7 +30,6 @@ $base-hover-color:#0a0a4b;
       content: '';
       display: block;
       height: 3px;
-      /* Adjust width as needed for different screen sizes */
       width: 75px;
       margin-top: 5px;
     }
@@ -60,7 +59,7 @@ $base-hover-color:#0a0a4b;
             transition-property: padding-left;
             transition-duration: 0.5s;
             transition-timing-function: ease-in-out;
-
+            
 
             @media screen and (max-width: 500px){
                 font-size: 20px;
@@ -95,8 +94,37 @@ $base-hover-color:#0a0a4b;
     .nav-item{
         a{
             padding: 1rem;
+            @media screen and (min-width: 992px){
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 30px;
+                    transition: all 0.3s ease-in-out;
+                  }
+                &:hover{
+                    &::after {
+                        background-color: #c50000;
+                        content: '';
+                        display: block;
+                        height: 3px;
+                        width: 100%;
+                      }
+                }
+            }
         }
         margin: 0 2rem;
+        @media screen and (min-width: 992px) {
+            .active{
+                &::after {
+                    background-color: #c50000;
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                  }
+            }
+        }
         @media screen and (max-width: 991px){
             margin: 0;
         }
@@ -187,6 +215,14 @@ footer{
             justify-content: center;
             .bar{
                 padding: 0 1rem;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+
+                &:hover{
+                    text-decoration: underline;
+                }
             }
             @media screen and (max-width:395px) {
                 flex-direction: column;
