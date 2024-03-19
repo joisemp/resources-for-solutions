@@ -232,12 +232,16 @@ footer h5 {
   }
 }
 
+body {
+  background-color: #f1f1ff;
+}
+
 #about-company {
   padding-bottom: 3rem;
 }
 #about-company .container {
   text-align: justify;
-  max-width: 700px;
+  max-width: 900px;
 }
 #about-company .container .title {
   font-weight: 700;
@@ -270,7 +274,7 @@ footer h5 {
   padding-bottom: 2rem;
 }
 #people .container {
-  max-width: 700px;
+  max-width: 900px;
 }
 #people .container img {
   -o-object-fit: cover;
