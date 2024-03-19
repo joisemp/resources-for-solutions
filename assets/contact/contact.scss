@@ -5,9 +5,19 @@ body{
 }
 
 #contact-section{
-    padding: 10rem 0 3rem 0;
+    padding: 0rem 0 3rem 0;
+
+    .img-banner{
+        padding-bottom: 2rem;
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
     @media screen and (max-width:990px){
-        padding: 8rem 0 3rem 0;
+        padding: 3rem 0 3rem 0;
     }
     color: white;
     background: rgb(2,0,36);

@@ -237,14 +237,23 @@ body {
 }
 
 #contact-section {
-  padding: 10rem 0 3rem 0;
+  padding: 0rem 0 3rem 0;
   color: white;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #030046 0%, #090979 35%, #00748b 100%);
 }
+#contact-section .img-banner {
+  padding-bottom: 2rem;
+}
+#contact-section .img-banner img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media screen and (max-width: 990px) {
   #contact-section {
-    padding: 8rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
   }
 }
 @media screen and (max-width: 991px) {
