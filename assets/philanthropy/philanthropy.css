@@ -236,54 +236,58 @@ body {
   background-color: #f1f1ff;
 }
 
-#about-company {
+#philanthrophy {
   padding-bottom: 3rem;
 }
-#about-company .container {
+#philanthrophy .container {
   text-align: justify;
   max-width: 900px;
 }
-#about-company .container .title {
+#philanthrophy .container .title {
   font-weight: 700;
   color: #00275a;
   font-size: 42px;
   border-radius: 0.5rem;
   text-align: left;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#philanthrophy .container .title::after {
+  content: "Resources 4 Solutions Inc.s Philanthropic Endeavours";
+  font-size: 18px;
+  color: rgb(190, 31, 31);
 }
 @media screen and (max-width: 600px) {
-  #about-company .container .title {
+  #philanthrophy .container .title {
     font-size: 32px;
   }
 }
-#about-company .container p {
-  padding-bottom: 1rem;
+#philanthrophy .container p {
   text-align: justify;
 }
-#about-company .img-banner {
+#philanthrophy .container h4 {
+  font-weight: 700;
+  text-decoration: underline;
+}
+#philanthrophy .container .clinic-details-list {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  text-align: left;
+}
+#philanthrophy .container .clinic-details-list li {
+  margin-bottom: 1rem; /* Add space between list items */
+}
+#philanthrophy .container .clinic-details-list b {
+  font-weight: bold; /* Highlight bold text */
+}
+#philanthrophy .img-banner {
   padding-bottom: 2rem;
 }
-#about-company .img-banner img {
+#philanthrophy .img-banner img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-#people {
-  padding-bottom: 2rem;
-}
-#people .container {
-  max-width: 900px;
-}
-#people .container img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1rem;
-}
-#people .container h3 {
-  margin-bottom: 1rem;
-}
-#people .container p {
-  text-align: justify;
-}/*# sourceMappingURL=about-main.css.map */
+}/*# sourceMappingURL=philanthropy.css.map */
